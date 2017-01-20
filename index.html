@@ -6,7 +6,7 @@
     <title>Агентство Недвижимости Твой Дом</title>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -147,34 +147,16 @@
 
     <!-- Map -->
     <section id="contact">
-      <div id="map" class="map" style="width: 100%;"></div>
+      <div id="map" class="map"></div>
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12">
-            <div style="font-size: 30; margin-top: 40; margin-bottom: 20;">Наш офис</div>
+            <div style="font-size: 30; margin-top: 40; margin-bottom: 20;"><h3>Наш офис</h3></div>
             <img src="img/office_place.jpg" width="600" class="img-rounded center-block" alt="Расположение офиса">
           </div>
         </div>
       </div>
     </section>
-
-
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init(){
-        var map = new ymaps.Map("map", {
-                center: [55.740684, 37.618174],
-                zoom: 15
-            });
-        map.behaviors.disable('scrollZoom');
-        placemark = new ymaps.Placemark([55.740684, 37.618174], {
-          hintContent: 'Твой Дом',
-          balloonContentHeader: 'Твой Дом',
-          balloonContentBody: 'Москва, Старомонетный переулок, 10'
-        });
-        map.geoObjects.add(placemark);
-      }
-    </script>
 
     <!-- Footer -->
     <footer>
@@ -195,7 +177,7 @@
                             <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <i class="fa fa-link fa-fw fa-3x"><a href="http://example.com/"></i></a>
+                            <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -203,6 +185,27 @@
         </div>
     </footer>
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var map = new ymaps.Map("map", {
+                center: [55.740684, 37.618174],
+                zoom: 15
+            });
+        map.behaviors.disable('scrollZoom');
+        placemark = new ymaps.Placemark([55.740684, 37.618174], {
+          hintContent: 'Твой Дом',
+          balloonContentHeader: 'Твой Дом',
+          balloonContentBody: 'Москва, Старомонетный переулок, 10'
+        });
+        map.geoObjects.add(placemark);
+      }
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -235,6 +238,7 @@
         });
     });
     </script>
+
 
 </body>
 
