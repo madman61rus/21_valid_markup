@@ -1,7 +1,9 @@
 # Site of Real Estate Agency
 
-[TODO. There will be project description]
+Проект сайта агенства недвижимости Твой Дом
 
-# Project Goals
+Сайт - https://madman61rus.github.io/21_valid_markup/
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+# Цели проекта
+
+Этот код написан в образовательных целях. Курс для веб-девелоперов - [DEVMAN.org](https://devman.org)
